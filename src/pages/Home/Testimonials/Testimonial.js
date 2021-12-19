@@ -4,7 +4,7 @@ import Rating from "@mui/material/Rating";
 
 const Testimonial = ({ review }) => {
   const { image, email, name, rating, text, _id } = review;
-  console.log(review);
+
   const star = parseInt(rating);
 
   return (
