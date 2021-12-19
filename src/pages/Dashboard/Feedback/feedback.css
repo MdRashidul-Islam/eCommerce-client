@@ -1,0 +1,51 @@
+.details-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-form {
+  width: 70%;
+}
+.details-form textarea {
+  width: 80%;
+  height: 80px;
+}
+.file {
+  border: 1px solid gray;
+  padding-top: 5px;
+}
+
+.details-form input {
+  width: 80%;
+  height: 50px;
+  margin-top: 2px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.details-form textarea {
+  font-size: 28px;
+}
+
+.details-form input:focus {
+  border: 2px solid #fd6506;
+  outline: none;
+}
+.details-form textarea:focus {
+  border: 2px solid #fd6506;
+  outline: none;
+}
+
+@media (max-width: 644px) {
+  .details-form textarea {
+    width: 100%;
+    height: 80px;
+  }
+  .details-form input {
+    width: 100%;
+    height: 50px;
+    margin-top: 2px;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}

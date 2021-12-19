@@ -1,0 +1,16 @@
+.all-link {
+  width: 70%;
+  display: inline-block;
+  margin: 0 auto;
+}
+.all-link Link button {
+  display: block;
+  margin: 30px 0px 0px 30px;
+  /* color: #fd6506; */
+  font-weight: bold;
+  background: red;
+}
+
+.navSide {
+  /* background: #fd6506; */
+}

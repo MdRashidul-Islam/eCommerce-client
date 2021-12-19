@@ -1,0 +1,45 @@
+.first-categoris {
+  margin-left: 50px;
+}
+.categoris {
+}
+.categoris p {
+  color: gray;
+  margin-top: 10px;
+}
+
+/* subscribe section */
+.subs-section {
+  text-align: center;
+  margin: 70px 0px 70px 0px;
+  line-height: 20px;
+}
+
+.subs-section input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #fd6506;
+  margin: 5px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.subs-section input:focus {
+  border: 2px solid #fd6506;
+  outline: 0;
+}
+.subs-section button {
+  height: 40px;
+  height: 40px;
+  border: 1px solid #fd6506;
+  background-color: #fd6506;
+  font-size: 18px;
+  padding: 0 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+}
+
+.subs-section h1 {
+  color: #fd6506;
+  margin-bottom: 10px;
+}

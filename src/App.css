@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-box {
+  margin: 40px;
+}
+
+.cart-btn {
+  padding: 10px 25px;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #fd6506;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-btn:hover {
+  background: #fd6506;
+  color: #fff;
+}
+
+.table-style {
+  background-color: #fd6506;
+  color: #fff;
+}
+.table-style TableCell {
+  color: #fff;
+}

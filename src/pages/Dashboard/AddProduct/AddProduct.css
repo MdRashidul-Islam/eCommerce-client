@@ -1,0 +1,11 @@
+.addProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details-form {
+}
+
+.field input {
+  width: 600px;
+}
