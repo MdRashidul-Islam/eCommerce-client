@@ -16,6 +16,7 @@ live site link('https://ecommerce-b0c03.web.app/')
 8. REACT HOOK FORM
 9. JWT
 10. stripe payment system
+11.
 
 ### Website Purpose
 
@@ -24,3 +25,5 @@ live site link('https://ecommerce-b0c03.web.app/')
 3. When a customer buy a product he should be logged in
 4. payment method added..Customer pay their payment by card.
 5. This site is secure.
+
+For admin: email: admin@admin.com pass:654321
