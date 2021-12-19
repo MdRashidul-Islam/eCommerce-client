@@ -66,11 +66,15 @@ const Feedback = () => {
               type="number"
               name="rating"
               onBlur={(e) => setRating(e.target.value)}
+              placeholder="Give us a rating min 1 and max 5"
               id=""
+              required
             />
             <textarea
               name="message"
               onBlur={(e) => setMessage(e.target.value)}
+              placeholder="Message"
+              required
             ></textarea>
             <input
               className="file"
