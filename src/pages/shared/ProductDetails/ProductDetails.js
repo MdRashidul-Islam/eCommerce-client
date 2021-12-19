@@ -20,7 +20,7 @@ const ProductDetails = () => {
     data.img = product.img;
     data.status = "Panding";
 
-    fetch("http://localhost:5000/orderedProducts", {
+    fetch("https://infinite-wildwood-62452.herokuapp.com/orderedProducts", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
@@ -35,7 +35,7 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${_id}`)
+    fetch(`https://infinite-wildwood-62452.herokuapp.com/products/${_id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [_id]);

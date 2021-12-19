@@ -28,7 +28,7 @@ const Feedback = () => {
     formData.append("message", message);
     formData.append("img", image);
 
-    fetch("http://localhost:5000/testimonials", {
+    fetch("https://infinite-wildwood-62452.herokuapp.com/testimonials", {
       method: "POST",
 
       body: formData,

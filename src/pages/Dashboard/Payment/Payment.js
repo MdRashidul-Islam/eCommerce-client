@@ -17,7 +17,7 @@ const Payment = () => {
   console.log(products);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myProducts/${_id}`)
+    fetch(`https://infinite-wildwood-62452.herokuapp.com/myProducts/${_id}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [_id]);

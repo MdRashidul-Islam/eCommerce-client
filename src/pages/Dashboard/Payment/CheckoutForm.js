@@ -17,13 +17,16 @@ const CheckoutForm = ({ products }) => {
   const [processing, setProcessing] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/create-payment-intent", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({ price }),
-    })
+    fetch(
+      "https://infinite-wildwood-62452.herokuapp.com/create-payment-intent",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ price }),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         setClientSecret(data.clientSecret);
@@ -79,7 +82,7 @@ const CheckoutForm = ({ products }) => {
         created: paymentIntent.created,
       };
 
-      const url = `http://localhost:5000/myProducts/${_id}`;
+      const url = `https://infinite-wildwood-62452.herokuapp.com/myProducts/${_id}`;
       fetch(url, {
         method: "PUT",
         headers: {

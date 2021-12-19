@@ -18,7 +18,9 @@ const MyOrder = () => {
   const [orderedProduct, setOrderProduct] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orderedProducts/${user?.email}`)
+    fetch(
+      `https://infinite-wildwood-62452.herokuapp.com/orderedProducts/${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => setOrderProduct(data));
   }, [user.email]);
@@ -27,7 +29,7 @@ const MyOrder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/orderedProducts/${id}`;
+      const url = `https://infinite-wildwood-62452.herokuapp.com/orderedProducts/${id}`;
       fetch(url, {
         method: "DELETE",
       })

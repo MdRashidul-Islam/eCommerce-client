@@ -15,7 +15,7 @@ const ManageAllOrders = () => {
   const [orderedProducts, setOrderProducts] = useState([]);
   const [reload, setReload] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/orderedProducts")
+    fetch("https://infinite-wildwood-62452.herokuapp.com/orderedProducts")
       .then((res) => res.json())
       .then((data) => setOrderProducts(data));
   }, [reload]);
@@ -24,7 +24,7 @@ const ManageAllOrders = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/orderedProducts/${id}`;
+      const url = `https://infinite-wildwood-62452.herokuapp.com/orderedProducts/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -44,9 +44,12 @@ const ManageAllOrders = () => {
   const handleConfirm = (id) => {
     const confirm = window.confirm("Are you sure want to Confirm?");
     if (confirm) {
-      fetch(`http://localhost:5000/orderedProducts/${id}`, {
-        method: "PUT",
-      })
+      fetch(
+        `https://infinite-wildwood-62452.herokuapp.com/orderedProducts/${id}`,
+        {
+          method: "PUT",
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.modifiedCount === 1) {
